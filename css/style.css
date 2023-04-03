@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+.container {
+  visibility: hidden;
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.menu .item {
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menu .item:hover {
+  background: #f2f2f2;
+}
+
+.menu .item i {
+  padding-right: 10px;
+}
+
+.menu .share {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu .share .share-menu {
+  width: 170px;
+  list-style: none;
+  position: absolute;
+  left: 260px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 10px 5px;
+  visibility: hidden;
+}
+
+.menu .share:hover .share-menu {
+  visibility: visible;
+}
+
+.menu .setting {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+  padding-top: 10px;
+}
